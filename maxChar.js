@@ -19,7 +19,17 @@ function makeCharMap(str) {
 
 function maxChar(str) {
   const charMap = makeCharMap(str);
+  let max = 0;
+  let output;
   console.log(charMap);
+
+  for (let char in charMap) {
+    if (charMap[char] > max) {
+      max = charMap[char];
+      output = char;
+    }
+  }
+  return output;
 }
 
-console.log(maxChar("LalalaBabaNonoMooooooo"));
+console.log(maxChar("LalalaBaaaaaaaabaNonoMooooooo"));
