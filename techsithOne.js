@@ -47,4 +47,45 @@ Array.prototype.print = function() {
   console.log(this.toString());
 };
 
-[1, 2, 3, 4].print();
+// [1, 2, 3, 4].print();
+
+// 5. Cloning an object
+
+const object = {
+  a1: 1,
+  a: {
+    b: {
+      c: 1
+    }
+  }
+};
+
+const cloneObj = { ...object, e: "Why does this not work" };
+
+cloneObj.a1 = 2;
+cloneObj.a.b.c = 4;
+
+// console.log(object);
+// console.log(cloneObj);
+
+//Cloning an Array
+let array = [1, 2, 3, 4];
+let cloneArray = array.slice();
+
+cloneArray[0] = 30;
+
+// console.log(array);
+// console.log(cloneArray);
+
+// 6. Merge arrays but make sure they're sorted
+
+const arrayA = [1, 2, 5, 7, 9];
+const arrayB = [2, 5, 7, 12, 100];
+
+function mergeArray(arrayA, arrayB) {
+  return [...arrayA, ...arrayB].sort((numA, numB) => {
+    return numA - numB;
+  });
+}
+
+console.log(mergeArray(arrayA, arrayB));
