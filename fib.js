@@ -16,4 +16,4 @@ function fib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
-console.log("Hey");
+console.log(fib(7));
