@@ -11,3 +11,9 @@
 //   fizz
 //   4
 //   buzz
+
+function fizzBuzz(n) {
+  console.log("Yo");
+}
+
+console.log(fizzBuzz(30));
