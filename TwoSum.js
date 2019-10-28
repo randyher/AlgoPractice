@@ -1,0 +1,17 @@
+// --- Directions
+// Given an array of numbers, return all pairs that add up to a
+// given sum. The numbers can be used more than once.
+
+function twoSum(array, n) {
+  console.log("Hey");
+  let output = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let y = 1; i < array.length; i++) {
+        if (array[i] + array[y] = n) {
+            output.push([array[i], array[y]])
+        }
+    }
+  }
+  return output
+}
+console.log(twoSum([1, 2, 3, 4], 4));
