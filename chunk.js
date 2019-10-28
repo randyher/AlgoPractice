@@ -10,11 +10,10 @@
 
 function chunk(array, n) {
   let chunk = [];
-
   for (let elem of array) {
     let last = chunk[chunk.length - 1];
 
-    if (!last || last.length == n) {
+    if (!last || last.length === n) {
       chunk.push([elem]);
     } else {
       last.push(elem);
