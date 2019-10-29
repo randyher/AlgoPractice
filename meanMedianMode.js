@@ -11,12 +11,13 @@ function mean(array) {
 
 function median(array) {
   let sortedNums = array.sort((x, y) => x - y);
+  console.log(sortedNums);
   if (sortedNums.length % 2 === 0) {
-    return 0;
+    return sortedNums[Math.floor(array.length / 2)];
   } else {
-    return 1;
+    return sortedNums[Math.floor((array.length - 1) / 2)];
   }
 }
 
-console.log(mean(numbers));
+// console.log(mean(numbers));
 console.log(median(numbersTwo));
