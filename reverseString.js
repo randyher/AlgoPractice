@@ -14,3 +14,6 @@ function reverseString(str) {
 }
 
 console.log(reverseString("Yes Sir!"));
+
+//Time Complexity: Linear
+//Every string of the string is visited
