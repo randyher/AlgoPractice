@@ -33,3 +33,5 @@ function maxChar(str) {
 }
 
 console.log(maxChar("LalalaBaaaaaaaabaNonoMooooooo"));
+
+//Linear time complexity
