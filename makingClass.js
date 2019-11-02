@@ -1,3 +1,6 @@
+// --- Directions
+// Make a simple person class
+
 class Person {
   constructor(name) {
     this.name = name;
