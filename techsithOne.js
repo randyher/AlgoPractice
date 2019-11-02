@@ -8,6 +8,16 @@ function grabValues(obj) {
   return Object.values(obj);
 }
 
+/* 1.5. Take the object and make a function that takes the object and 
+outputs the KEYS of the array
+*/
+
+let x = { a: 1, b: 2, c: 3 };
+
+function grabKeys(obj) {
+  return Object.keys(obj);
+}
+
 // console.log(grabValues(x));
 
 // 2. Reverse String

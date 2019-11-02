@@ -20,6 +20,10 @@ class Queue {
   remove() {
     return this.data.pop();
   }
+
+  peek() {
+    return this.data[this.data.length - 1];
+  }
 }
 
 const q = new Queue();
