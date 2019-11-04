@@ -35,7 +35,6 @@ const profileFour = {
 function milTime(str) {
   let timeArray = str.split(":");
 
-  // let lateOrEarly =
   if (timeArray[1].slice(2) == "PM") {
     let hour = parseInt(timeArray[0]) + 12;
     return hour + ":" + timeArray[1];
@@ -43,3 +42,7 @@ function milTime(str) {
     return timeArray.join(":");
   }
 }
+
+// I have an object:
+// const obj = { x: 1}
+//make it so we can't do obj['y']
