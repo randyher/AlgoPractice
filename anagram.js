@@ -30,3 +30,17 @@ function buildCharMap(str) {
 
   return charMap;
 }
+//////////
+function anagram(strA, strB) {
+  fixedA = strA
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join("");
+  fixedB = strB
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join("");
+  return fixedA == fixedB;
+}
