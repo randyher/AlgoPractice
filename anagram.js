@@ -30,7 +30,7 @@ function buildCharMap(str) {
 
   return charMap;
 }
-//////////
+////////// without a frequency map
 function anagram(strA, strB) {
   fixedA = strA
     .toLowerCase()
