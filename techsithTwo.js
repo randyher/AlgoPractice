@@ -25,9 +25,10 @@ function addNums(num1, num2) {
 
 function findMissing(array) {
   let allNumbers = [];
-  for (let i = 1; i <= array.length; i++) {
+  for (let i = 1; i <= array.length + 1; i++) {
     allNumbers.push(i);
   }
+
   for (let num of allNumbers) {
     if (!array.includes(num)) {
       return num;
