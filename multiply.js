@@ -1,3 +1,6 @@
+// Write a function that multiplies two integers without using the built-in function
+// For example, multiply(2,4) returns 8, multiply (7,3) returns 21
+
 function multiply(x, y) {
   let output = 0;
   let smallestNumber;
