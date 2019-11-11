@@ -26,3 +26,19 @@ function countMax(array) {
 }
 
 console.log(countMax([5, 1, 2, 3, 4, 5, 4, 3, 5, 2, 5]));
+
+// Get the count of the smallest number in the array
+
+function countMin(array) {
+  const minNum = Math.min.apply(null, array);
+  let minNumArray = [];
+
+  for (let num of array) {
+    if (num === minNum) {
+      minNumArray.push(num);
+    }
+  }
+  return minNumArray.length;
+}
+
+console.log(countMax([5, 1, 2, 3, 4, 5, 4, 3, 5, 2, 5]));
