@@ -9,3 +9,13 @@
 // 3) Implement 'traverseBF' and 'traverseDF'
 // on the tree class.  Each method should accept a
 // function that gets called with each element in the tree
+
+//Breadth First: LEFT TO RIGHT FROM TOP
+//Depth First: TOP TO BOTTOM, THEN ALL CHILDREN, THEN UP
+
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.children = [];
+  }
+}
